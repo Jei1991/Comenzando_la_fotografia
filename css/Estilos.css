@@ -1,0 +1,183 @@
+body {
+  font-family: Dancing Script;
+  background: #02010a;
+  font-size: 25px;
+}
+
+header {
+  background: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.titulo{
+    text-shadow: 2px 2px #02010a;
+    margin: auto;
+}
+header nav{
+    margin: auto;
+}
+
+header {
+  animation-duration: 1.5s;
+  animation-name: mislidein;
+  animation-direction: alternate;
+}
+
+@keyframes mislidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px #02010a;
+  color: white;
+}
+
+ul {
+  text-align: right;
+}
+
+a {
+  color: white;
+}
+
+.actual {
+  text-decoration: none;
+}
+
+div.contenedor {
+  width: 900px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contenedor-primario {
+  width: 100%;
+  background: #82c3a6;
+}
+
+img.central {
+  width: 50%;
+  max-width: 500px;
+  display: block;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.contenedor-segundo {
+  display: flex;
+  flex-grow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  background: #d5c75f;
+}
+
+img.primer-columna {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+
+img.dos-columna {
+  width: 100%;
+}
+
+.primer-columna img:hover {
+  transition: 1s;
+  transform: rotate(10deg);
+  border: 2px solid;
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.dos-columna img:hover {
+  transform: translate(20px, 5px);
+  border: 2px solid;
+  -webkit-box-shadow: 2px 2px 2px #82c3a6;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: justify;
+}
+
+.contenedor-tabla {
+  display: table;
+}
+
+.contenedor-fila {
+  display: table-row;
+}
+
+.contenedor-columna {
+  display: table-cell;
+  width: 25%;
+  padding: 30px;
+}
+
+ .facebook {
+    width: 25px;
+   
+  }
+
+  .instagram{
+    width: 25px;
+    height:25px;
+  }
+
+  .copy{
+    width: 25px;
+    height:25px;
+  }
+
+/*para desktop*/
+@media (min-width: 900px) {
+  div.contenedor {
+    width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  div.contenedor {
+    width: 100%;
+  }
+
+ header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  ul{
+    margin: 0 auto;
+  }
+
+  div.contenedor-segundo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor-fila {
+    display: flex;
+    flex-direction: column;
+  }
+}

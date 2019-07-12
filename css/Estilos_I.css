@@ -1,0 +1,177 @@
+body {
+	font-family: Dancing Script;
+	background: #02010a;
+	font-size: 25px;
+}
+
+header {
+  background: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.titulo{
+    text-shadow: 2px 2px #02010a;
+    margin: auto;
+}
+header nav{
+    margin: auto;
+}
+
+	
+
+header {
+  animation-duration: 1.5s;
+  animation-name: mislidein;
+  animation-direction: alternate;
+}
+
+@keyframes mislidein {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px #02010a;
+  color: white;
+}
+
+ul {
+  text-align: right;
+}
+
+a {
+  color: white;
+}
+
+.actual {
+  text-decoration: none;
+}
+
+div.contenedor{
+	width:900px;
+	margin: auto; 
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor-galeria{
+	background:  #d5c75f;
+}
+.contenedor-hilera{
+	display:flex;
+	flex-flow: row wrap;
+}
+
+.contenedor-pilar{
+width: 31%;
+padding: 1%;
+}
+
+#imagen_1 img{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+#imagen_2 img{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+#imagen_3 img{
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+#imagen_4 img{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+#imagen_6 img{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	background:  #C6d5c5;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: justify;
+}
+.contenedor-tabla{
+	display: table;
+}
+.contenedor-fila{
+	display: table-row;
+	width: 100%;
+}
+.contenedor-columna{
+	margin: auto;
+	display: table-cell;
+	width:25%;
+}
+
+ .facebook {
+    width: 25px;
+    height:25px;
+   
+  }
+
+  .instagram{
+    width: 25px;
+    height:25px;
+  }
+
+  .copy{
+    width: 25px;
+    height:25px;
+  }
+
+/*para desktop*/
+
+@media (min-width: 900px){
+div.contenedor{
+	width:900px;
+}
+}
+
+@media (max-width: 900px){
+
+	div.contenedor{
+	width:100%;
+	}
+
+	header{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	ul{
+		margin: 0 auto;
+	}
+
+	.contenedor-hilera {
+		display: flex;
+		flex-direction: column;
+		text-align:center;
+	}
+
+	.contenedor-hilera div {
+		margin: 0 auto;
+	}
+	.contenedor-hilera div img {
+	width: 100%;
+	}
+}
